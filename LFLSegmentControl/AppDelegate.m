@@ -5,18 +5,25 @@
 //  Created by vintop_xiaowei on 16/1/3.
 //  Copyright © 2016年 vintop_DragonLi. All rights reserved.
 //
-
 #import "AppDelegate.h"
-
+#import "LFLViewController.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application
+didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    LFLViewController *VC = [LFLViewController new];
+    UINavigationController *nav =
+    [[UINavigationController alloc] initWithRootViewController:VC];
+    self.window.rootViewController = nav;
+    nav.title = @"LFLUISegmentedControl";
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
