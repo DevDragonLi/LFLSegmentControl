@@ -1,7 +1,8 @@
 
-#LFLSegmentControl-简单易用分段模仿网易新闻和搜狐新闻的首页效果，滑动切换不同栏目视图 iOS
-
-###公司项目中需要这个demo的效果,所以自己写了一下.如果觉得好用,还望star下.谢谢
+#LFLSegmentControl-最简单易用分段控件!
+# 模仿网易新闻和搜狐新闻的首页效果，滑动切换不同栏目视图
+###最新更新日志 
+1. 2016年 6.25 优化创建控件代码,一句话即可! 重构代码 
 ## 效果图
  ![image](https://github.com/LFL2018/Som_related_information_LFL/blob/master/The_picture/LFLSegmentControl/LFLSegmentControl.gif?raw=true)
 
@@ -11,7 +12,8 @@
 
 ```
    pod 'SegmentControlLFL', '~> 1.0.0' 
-
+   注:1.0.0 版本不建议再使用,建议使用2.0.0 
+   pod 'SegmentControlLFL', '~> 2.0.0' 
 ```
 然后终端执行pod install 即可
 
@@ -19,17 +21,20 @@
 
 ##2.代码演示部分
 ```
-//    1.初次创建：
-LFLUISegmentedControl* LFLuisement=[[LFLUISegmentedControl alloc]initWithFrame:CGRectMake(0, 64, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds))];
-LFLuisement.delegate = self;
-//   2.设置显示切换标题数组
-NSArray* LFLarray=[NSArray arrayWithObjects:@"演示标题",@"DragonLi",@"LFL2018",@"Github",nil];
+// 1.创建控件,建议高度37,其他数值,需要修改源码,适应居中标题view
+    self.LFLuisement=[LFLUISegmentedControl segmentWithFrame:CGRectMake(0, 64,self_Width ,37) titleArray:@[@"演示标题",@"DragonLi",@"LFL2018",@"Github"] defaultSelect:0];
 
-[LFLuisement AddSegumentArray:LFLarray];
-//   default Select the Button
-[LFLuisement selectTheSegument:2];
-self.LFLuisement = LFLuisement;
-[self.view addSubview:LFLuisement];
+    /*
+//    2, 自定义各类颜色 和 字体大小
+    [self.LFLuisement titleColor:[UIColor greenColor] selectTitleColor:[UIColor redColor] BackGroundColor:[UIColor grayColor] titleFontSize:13];
+//    3. 设置下滑线颜色 .默认为主流的红色
+    [self.LFLuisement lineColor:[UIColor brownColor]];
+   
+   */
+	
+	
+    self.LFLuisement.delegate = self;
+    [self.view addSubview:self.LFLuisement];
 
 #pragma mark ---LFLUISegmentedControlDelegate
 /**

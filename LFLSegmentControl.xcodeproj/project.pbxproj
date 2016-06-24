@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		43DA90FF1CA2D816001EED0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DA90F21CA2D816001EED0B /* AppDelegate.m */; };
-		43DA91001CA2D816001EED0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43DA90F31CA2D816001EED0B /* Assets.xcassets */; };
 		43DA91011CA2D816001EED0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43DA90F41CA2D816001EED0B /* LaunchScreen.storyboard */; };
 		43DA91021CA2D816001EED0B /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43DA90F61CA2D816001EED0B /* info.plist */; };
 		43DA91041CA2D816001EED0B /* LFLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DA90FB1CA2D816001EED0B /* LFLViewController.m */; };
@@ -20,7 +19,6 @@
 		437FF1CA1C38F9CB008DDF77 /* LFLSegmentControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LFLSegmentControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43DA90F11CA2D816001EED0B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		43DA90F21CA2D816001EED0B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		43DA90F31CA2D816001EED0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43DA90F51CA2D816001EED0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43DA90F61CA2D816001EED0B /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		43DA90FA1CA2D816001EED0B /* LFLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLViewController.h; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 			children = (
 				43DA90F11CA2D816001EED0B /* AppDelegate.h */,
 				43DA90F21CA2D816001EED0B /* AppDelegate.m */,
-				43DA90F31CA2D816001EED0B /* Assets.xcassets */,
 				43DA90F41CA2D816001EED0B /* LaunchScreen.storyboard */,
 				43DA90F61CA2D816001EED0B /* info.plist */,
 				43DA90FC1CA2D816001EED0B /* main.m */,
@@ -121,7 +118,6 @@
 				TargetAttributes = {
 					437FF1C91C38F9CB008DDF77 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = FNCPC67LST;
 					};
 				};
 			};
@@ -148,7 +144,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43DA91001CA2D816001EED0B /* Assets.xcassets in Resources */,
 				43DA91011CA2D816001EED0B /* LaunchScreen.storyboard in Resources */,
 				43DA91021CA2D816001EED0B /* info.plist in Resources */,
 			);
@@ -266,7 +261,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LFLSegmentControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vipiao.LFLSegmentControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,7 +274,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LFLSegmentControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vipiao.LFLSegmentControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
