@@ -12,8 +12,9 @@
 
 ```
    pod 'SegmentControlLFL', '~> 1.0.0' 
-   注:1.0.0 版本不建议再使用,建议使用2.0.0 
-   pod 'SegmentControlLFL', '~> 2.0.0' 
+   注:1.0.0 版本不建议再使用,去掉指定1.0.0即可pod最新版本
+   
+   pod 'SegmentControlLFL' 
 ```
 然后终端执行pod install 即可
 
