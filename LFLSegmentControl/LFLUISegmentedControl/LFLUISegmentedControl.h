@@ -17,7 +17,7 @@
 
 @interface LFLUISegmentedControl : UIView
 
-@property(nonatomic,strong)id <LFLUISegmentedControlDelegate>delegate;
+@property(nonatomic,weak)id <LFLUISegmentedControlDelegate>delegate;
 /**
  *  @param segument 手动切换下标位置
  */
