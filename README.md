@@ -1,8 +1,10 @@
 
 #LFLSegmentControl-最简单易用分段控件!
 # 模仿网易新闻和搜狐新闻的首页效果，滑动切换不同栏目视图
-###最新更新日志 
-1. 2016年 6.25 优化创建控件代码,一句话即可! 
+
+- 2017- 04 pod update 3.0.0
+
+-  2016年 6.25 优化创建控件代码,一句话即可! 
 ## 效果图
 ![效果图](./LFLSegmentControl.gif)
 
@@ -11,7 +13,7 @@
 ###1.1   With [CocoaPods](http://cocoapods.org), add this line to your Podfile.
 
 ```
-   pod 'SegmentControlLFL', '~> 1.0.0' 
+   pod 'SegmentControlLFL', '~> 3.0.0' 
   
    pod install
 
@@ -49,8 +51,7 @@ Requirements
 ==============
 This library requires `iOS 6.0+` and `Xcode 6.0+`.
 
-# 3. 有任何问题，请及时 issues me 
- <dragonli_52171@163.com>   
+# 3. 有任何问题，请及时 issues me `dragonli_52171@163.com`
 
 # 4. 已知问题,如果分段数组大于6个,因为没有采取滚动视图承载,可能会有显示问题,修改下源码即可.但是对于一般简单标题需求可完美使用.
 
