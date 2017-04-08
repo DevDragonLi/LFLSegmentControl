@@ -2,7 +2,7 @@
 #LFLSegmentControl-最简单易用分段控件!
 # 模仿网易新闻和搜狐新闻的首页效果，滑动切换不同栏目视图
 
-- 2017- 04 - 07 pod update 3.0.0
+- 2017- 04 - 07  当初网易邮箱 	`pod trunk register` 现在接不到邮件,更新不了
 
 - 2016- 06 - 25 优化创建控件代码,一句话即可! 
 ## 效果图
@@ -13,13 +13,13 @@
 ###1.1   With [CocoaPods](http://cocoapods.org), add this line to your Podfile.
 
 ```
-   pod 'SegmentControlLFL', '~> 3.0.0' 
+   pod 'SegmentControlLFL', '~> 2.0.0' 
   
    pod install
 
 ```
 
-###1.2  也可以下载源码后把LFLUISegmentedControl文件夹直接拖入工程即可,可以clone下拖入工程使用即可.
+###1.2  也可以下载源码后把LFLUISegmentedControl文件夹直接拖入工程即可,可以clone下拖入工程使用即可.这个是最新版
 
 ##2.代码演示部分
 ```
