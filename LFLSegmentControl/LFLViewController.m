@@ -5,7 +5,6 @@
 //  Created by vintop_xiaowei on 16/1/3.
 //  Copyright © 2016年 vintop_DragonLi. All rights reserved.
 /**
-        https://github.com/LFL2018 
         使用说明
  1.使用处  #import "LFLUISegmentedControl.h"
    按照 viewDidLoad 添加即可

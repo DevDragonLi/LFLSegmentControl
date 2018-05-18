@@ -40,14 +40,14 @@
 -(instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-    self.selectSeugment=0;
-    self.ButtonArray=[NSMutableArray arrayWithCapacity:_ButtonArray.count];
-    self.titleFont=[UIFont systemFontOfSize:14.0];
-    self=[super initWithFrame:frame];
-    self.titleColor = [UIColor blackColor];
-    self.selectColor=[UIColor blackColor];
-    //    整体背景颜色
-    self.backgroundColor = [UIColor whiteColor];
+        self.selectSeugment=0;
+        self.ButtonArray=[NSMutableArray arrayWithCapacity:_ButtonArray.count];
+        self.titleFont=[UIFont systemFontOfSize:14.0];
+        self=[super initWithFrame:frame];
+        self.titleColor = [UIColor blackColor];
+        self.selectColor=[UIColor blackColor];
+        //    整体背景颜色
+        self.backgroundColor = [UIColor whiteColor];
     }
     return self;
 }
@@ -89,7 +89,7 @@
         [UIView animateWithDuration:0.1 animations:^{
             [ self.buttonDown setFrame:CGRectMake(segument * self.widthFloat,self.bounds.size.height-2,  self.widthFloat, 2)];
         }];
-         self.selectSeugment=segument;
+        self.selectSeugment=segument;
         [self.delegate uisegumentSelectionChange: self.selectSeugment];
     }
 }
@@ -104,8 +104,8 @@
     for (UIView *view in self.subviews) {
         if ([[view class] isSubclassOfClass:[UIButton class]]) {
             UIButton *button =(UIButton *) view;
-          if (titleColor)  [button setTitleColor:titleColor forState:UIControlStateNormal];
-          if (selectTitleColor)  [button setTitleColor:selectTitleColor forState:UIControlStateHighlighted];
+            if (titleColor)  [button setTitleColor:titleColor forState:UIControlStateNormal];
+            if (selectTitleColor)  [button setTitleColor:selectTitleColor forState:UIControlStateHighlighted];
             if (size) [button.titleLabel setFont:[UIFont systemFontOfSize:size]];
         }
     }

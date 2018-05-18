@@ -11,8 +11,10 @@
 @protocol LFLUISegmentedControlDelegate< NSObject>
 
 @optional
+
 /// 外界调用获取点击下标
 -(void)uisegumentSelectionChange:(NSInteger)selection;
+
 @end
 
 @interface LFLUISegmentedControl : UIView
@@ -32,8 +34,8 @@
  *   34 ---默认高度,可以根据项目需求自己更改
  */
 + (instancetype)segmentWithFrame:(CGRect)frame
-                  titleArray:(NSArray *)titleArray
-               defaultSelect:(NSInteger)defaultSelect;
+                      titleArray:(NSArray *)titleArray
+                   defaultSelect:(NSInteger)defaultSelect;
 /**
  *  设置颜色
  *  @param titleColor       标题颜色  默认黑色
