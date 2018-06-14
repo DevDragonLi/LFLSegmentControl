@@ -3,10 +3,6 @@
 
 > 模仿网易新闻和搜狐新闻的首页效果，滑动切换不同栏目视图
 
-
- [![star this repo](http://githubbadges.com/star.svg?user=DevDragonLi&repo=LFLSegmentControl)](http://github.com/DevDragonLi/iOSDevDemo)
- [![fork this repo](http://githubbadges.com/fork.svg?user=DevDragonLi&repo=LFLSegmentControl)](http://github.com/DevDragonLi/iOSDevDemo/fork)
-
 ## Stargazers over time
 
 [![Stargazers over time](https://starcharts.herokuapp.com/DevDragonLi/iOSDevDemo.svg)](https://starcharts.herokuapp.com/DevDragonLi/iOSDevDemo)
